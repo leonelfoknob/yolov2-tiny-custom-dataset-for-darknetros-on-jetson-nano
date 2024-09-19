@@ -1,6 +1,8 @@
 # yolov2-tiny-custom-dataset-for-darknetros-on-jetson-nano
 
 *************************************************************************************************
+ - Step to train custom dataset with yolov2-tiny
+*************************************************************************************************
  -prediction make with difernt train model
  
 ![predictions_4](https://github.com/user-attachments/assets/c390dfa5-8399-4fd7-bf4b-ba8fb610dfd2)
