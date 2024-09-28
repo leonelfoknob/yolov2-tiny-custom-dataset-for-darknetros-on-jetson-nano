@@ -8,6 +8,8 @@ Using ROS1 as the robotics framework, we integrated the darknet_ros package, whi
 
 We chose YOLOv2-tiny, a lightweight and efficient version of the YOLO object detection model, as it strikes a balance between speed and accuracy. To achieve the desired performance, we created a custom dataset tailored to our needs and trained a model that could detect plants and obstacles effectively, enabling smooth navigation for our robot.
 
+With the project goal clearly defined and the choice of YOLOv2-tiny established, the next crucial step was to train the custom model and seamlessly integrate it with ROS for real-time object detection and navigation. Below is a detailed explanation of the steps involved in training the model and implementing it on the Jetson Nano using ROS.
+
 *************************************************************************************************
  - Step to train custom dataset with yolov2-tiny
 *************************************************************************************************
