@@ -3,7 +3,9 @@
 Proje Goal
 
 The objective of this project was to leverage a camera to detect objects and navigate between them. Specifically, the focus was on detecting plants and maneuvering through them autonomously. Given our limited budget, we utilized a Jetson Nano Development Kit to run an AI model for object detection.
+
 Using ROS1 as the robotics framework, we integrated the darknet_ros package, which facilitates the use of YOLO models for object recognition with high accuracy. The Jetson Nano 4GB, while efficient, has limited resources, which led us to carefully select the most suitable YOLO model for our application.
+
 We chose YOLOv2-tiny, a lightweight and efficient version of the YOLO object detection model, as it strikes a balance between speed and accuracy. To achieve the desired performance, we created a custom dataset tailored to our needs and trained a model that could detect plants and obstacles effectively, enabling smooth navigation for our robot.
 
 *************************************************************************************************
