@@ -1,6 +1,6 @@
 # yolov2-tiny-custom-dataset-for-darknetros-on-jetson-nano
 
-#Proje Goal
+## Proje Goal
 
 The objective of this project was to leverage a camera to detect objects and navigate between them. Specifically, the focus was on detecting plants and maneuvering through them autonomously. Given our limited budget, we utilized a Jetson Nano Development Kit to run an AI model for object detection.
 
@@ -11,7 +11,7 @@ We chose YOLOv2-tiny, a lightweight and efficient version of the YOLO object det
 With the project goal clearly defined and the choice of YOLOv2-tiny established, the next crucial step was to train the custom model and seamlessly integrate it with ROS for real-time object detection and navigation. Below is a detailed explanation of the steps involved in training the model and implementing it on the Jetson Nano using ROS.
 
 *************************************************************************************************
-#Step to train custom dataset with yolov2-tiny
+## Step to train custom dataset with yolov2-tiny
 *************************************************************************************************
  -prediction make with difernt train model
  
