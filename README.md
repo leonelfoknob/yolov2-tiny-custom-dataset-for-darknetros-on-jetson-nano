@@ -13,6 +13,8 @@ With the project goal clearly defined and the choice of YOLOv2-tiny established,
 *************************************************************************************************
 ## Step to train custom dataset with yolov2-tiny
 *************************************************************************************************
+
+## Implementation of the model in darknet_ros package (ROS1)
  -prediction make with difernt train model
  
 ![predictions_4](https://github.com/user-attachments/assets/c390dfa5-8399-4fd7-bf4b-ba8fb610dfd2)
