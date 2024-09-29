@@ -68,3 +68,5 @@ After cloning and building Darknet ROS, you'll need to add your custom YOLOv2-ti
 ![predictions_2](https://github.com/user-attachments/assets/6d9e36ad-b28d-41cb-b5ba-ac78b1f80e48)
 ![predictions_1](https://github.com/user-attachments/assets/62306df2-1b55-4e93-8225-777c0317e754)
 ![predictions_0](https://github.com/user-attachments/assets/73242d7e-e686-4be2-a091-cafed466318e)
+
+Reference : https://github.com/kamipakistan/YOLOv3-Custom-Object-Detection/tree/main
