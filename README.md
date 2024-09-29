@@ -41,6 +41,26 @@ Execute the process.py script after configuring it with the correct dataset path
 Now that the folder structure and required files are in place, you can proceed by following the instructions in the Colab notebook shared in this repository. The notebook will guide you through the process of compiling darknet, loading the dataset, and starting the training process.
 
 ## Implementation of the model in darknet_ros package (ROS1)
+After cloning and building Darknet ROS, you'll need to add your custom YOLOv2-tiny model files into the appropriate directory.
+- Navigate to the weights folder of Darknet ROS and place your trained YOLOv2-tiny weight file (best.weights or yolov2-tiny.weights) there.
+- Next, copy your custom .cfg file (YOLOv2-tiny_custom.cfg configuration file) into the cfg directory
+- Modify Darknet ROS Configuration for Custom Model
+  Now, configure Darknet ROS to use your custom model. Update the yolo_v2_tiny.yaml file to reflect your custom model's configuration:
+   - Navigate to the config folder: cd ~/catkin_ws/src/darknet_ros/darknet_ros/config
+   - Open and edit the yolo_v2_tiny.yaml file
+   - Change the paths for the weights, config file, and classes to match your custom model:
+   - yolo_model:
+     config_file: "yolo_network_config/cfg/yolov2-tiny-custom.cfg"
+     weight_file: "yolo_network_config/weights/best.weights"
+     threshold: 0.3
+     detection_classes: 2 # Change this to match the number of classes in your custom model
+ - Now, you can launch the Darknet ROS node to begin using your YOLOv2-tiny model for object detection:
+   roslaunch darknet_ros darknet_ros.launch
+
+- This will start the darknet_ros node and begin detecting objects using your trained YOLOv2-tiny model. If you have a camera feed connected, it will use the camera to perform real-time   object detection.
+- You can visualize the detection results in RViz or publish them as ROS topics for further use in your robotic applications.
+- If you want to test the model with a live camera feed, ensure your camera is connected and recognized by ROS, then modify the camera launch file as necessary. Darknet ROS should now be  able to detect objects in real-time using your custom-trained YOLOv2-tiny model
+  
  -prediction make with difernt train model
  
 ![predictions_4](https://github.com/user-attachments/assets/c390dfa5-8399-4fd7-bf4b-ba8fb610dfd2)
