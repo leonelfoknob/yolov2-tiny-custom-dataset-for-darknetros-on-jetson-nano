@@ -1,5 +1,7 @@
 # yolov2-tiny-custom-dataset-for-darknetros-on-jetson-nano
 
+- Video test : https://youtu.be/JnDkFCTRWC8?si=crE7Z726rA0cUaVC
+
 ## Proje Goal
 
 The objective of this project was to leverage a camera to detect objects and navigate between them. Specifically, the focus was on detecting plants and maneuvering through them autonomously. Given our limited budget, we utilized a Jetson Nano Development Kit to run an AI model for object detection.
